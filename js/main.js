@@ -19,10 +19,10 @@ window.addEventListener("scroll", () => {
 let section = document.querySelector(".skills");
 let progress = document.querySelectorAll(".skills .skill span");
 window.onscroll = function () {
-  if (window.scrollY >= section.offsetTop - 300) {
+  if (window.scrollY >= section.offsetTop -400 ) {
     progress.forEach((span) => {
       span.style.width = span.dataset.width;
-    })
+    })``
   }
 }
 // type writer
@@ -37,4 +37,3 @@ window.onload = function () {
     }
   },100)
 }
-console.log(document.getElementById("type").innerText)
